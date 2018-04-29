@@ -2,4 +2,17 @@
 
 require_relative '../config/environment'
 
-MusicLibraryController.new.call
+#MusicLibraryController.new.call
+new_music=MusicLibraryController.new
+new_music.call
+
+input=gets.strip
+
+while input!="exit"
+  puts "What would you like to do?"
+  if input=="list songs"
+    new_music.list_songs
+    #MusicLibraryController.list_songs
+    #list_songs
+  end
+end
