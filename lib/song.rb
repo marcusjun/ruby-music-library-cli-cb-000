@@ -32,14 +32,9 @@ class Song
   end
 
   def self.create(name)
-    #new_song=self.new(name)
-    #new_song.save
-    #new_song
-
-    self.new(name).save.tap do |o|
-      o.name=name
-    end
-
+    new_song=self.new(name)
+    new_song.save
+    new_song
   end
 
   def self.destroy_all
