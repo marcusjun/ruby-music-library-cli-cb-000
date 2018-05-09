@@ -36,9 +36,9 @@ class Song
     #new_song.save
     #new_song
 
-    self.new(name).save.tap# do |o|
+    self.new(name).save.tap do |o|
       #o.name=name
-    #end
+    end
 
   end
 
