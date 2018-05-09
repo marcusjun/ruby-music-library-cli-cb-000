@@ -32,9 +32,13 @@ class Song
   end
 
   def self.create(name)
-    new_song=self.new(name)
-    new_song.save
-    new_song
+    #new_song=self.new(name)
+    #new_song.save
+    #new_song
+
+    self.new.tap do |o|
+      o.name=name
+    end
 
   end
 
